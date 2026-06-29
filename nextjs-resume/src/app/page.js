@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-10 text-white">
+    <main className="max-w-3xl mx-auto px-6 py-10 text-black">
       
       <header className="mb-10">
         <h1 className="text-4xl font-bold">Giana Cresta</h1>
@@ -21,7 +21,7 @@ export default function Page() {
         <h2 className="text-xl font-semibold border-b pb-1 mb-3">Education</h2>
         <div>
           <p className="font-semibold">University of South Florida</p>
-          <p className="text-sm text-white">Business Analytics and Information Systems</p>
+          <p className="text-sm text-black">Business Analytics and Information Systems</p>
           <ul className="list-disc ml-6 mt-2">
             <li>Relevant Classes: AI and Data Analytics, Database Design and Administration, Business Application Development</li>
           </ul>
@@ -34,7 +34,7 @@ export default function Page() {
 
         <div className="mb-6">
           <p className="font-semibold">Team Member- Steak N' Shake</p>
-          <p className="text-sm text-white">Summer 2023</p>
+          <p className="text-sm text-black">Summer 2023</p>
           <ul className="list-disc ml-6 mt-2">
             <li>Assisted customers when they had an issue or question and collaborated with co-workers to have an efficient output.</li>
             <li>Served food, restocked supplies/ingredients, cleaned dishes/tables, cooked and packaged menu items.</li>
