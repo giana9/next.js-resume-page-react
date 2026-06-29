@@ -57,4 +57,4 @@ npm run dev
 http://localhost:3000
 ```
 
-The résumé will load and update automatically as changes are made.
+The resume will load and update automatically as changes are made.
