@@ -1,9 +1,88 @@
-@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* layout */
+.resume-container {
+  max-width: 750px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+  background: #ffffff;
+  color: #1f2937;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.75;
+}
+
+/* header */
+.resume-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resume-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.resume-contact {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* section titles */
+.resume-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+}
+
+/* rows */
+.resume-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+/* company */
+.resume-entity {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+/* role */
+.resume-role {
+  font-style: italic;
+  color: #374151;
+}
+
+/* location and dates */
+.resume-meta {
+  text-align: right;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* details*/
+.resume-detail {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+/* bullet list */
+.resume-list {
+  margin-top: 0.75rem;
+  margin-left: 1.5rem;
+}
+
+.resume-list li {
+  margin-bottom: 0.4rem;
 }

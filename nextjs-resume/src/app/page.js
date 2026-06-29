@@ -1,72 +1,139 @@
 export default function Page() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-10 text-black">
-      
-      <header className="mb-10">
-        <h1 className="text-4xl font-bold">Giana Cresta</h1>
-        <p className="text-sm">crestagiana@gmail.com</p>
-        <p className="text-sm">813-659-7285</p>
-      </header>
+    <main className="resume-container">
 
       {/* objective */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold border-b pb-1 mb-3">Objective</h2>
-        <p>
-          Eager to work BAIS college student. Wants to break into the data science feild. Analytics roles preferred.
+      <header className="resume-header">
+        <h1 className="resume-name">Giana Cresta</h1>
+        <p className="resume-contact">
+          813-659-7285 • crestagiana@gmail.com • Tampa, FL
         </p>
-      </section>
+      </header>
 
       {/* education */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold border-b pb-1 mb-3">Education</h2>
-        <div>
-          <p className="font-semibold">University of South Florida</p>
-          <p className="text-sm text-black">Business Analytics and Information Systems</p>
-          <ul className="list-disc ml-6 mt-2">
-            <li>Relevant Classes: AI and Data Analytics, Database Design and Administration, Business Application Development</li>
-          </ul>
+      <section className="resume-section">
+        <h2 className="resume-section-title">EDUCATION</h2>
+
+        <div className="resume-row">
+          <div>
+            <p className="resume-entity">University of South Florida</p>
+            <p className="resume-role">Business Analytics and Information Systems B.S.</p>
+            <p className="resume-detail">GPA: 3.81</p>
+
+            <p className="resume-role mt-3">Relevant Classes:</p>
+            <ul className="resume-list">
+              <li>AI and Data Analytics</li>
+              <li>Database Design and Administration</li>
+              <li>Business Application Development</li>
+            </ul>
+          </div>
+
+          <div className="resume-meta">
+            Tampa, FL<br />
+            Aug 2023 – July 2027
+          </div>
         </div>
       </section>
 
       {/* experience */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold border-b pb-1 mb-3">Work Experience</h2>
+      <section className="resume-section">
+        <h2 className="resume-section-title">EXPERIENCE</h2>
 
-        <div className="mb-6">
-          <p className="font-semibold">Team Member- Steak N' Shake</p>
-          <p className="text-sm text-black">Summer 2023</p>
-          <ul className="list-disc ml-6 mt-2">
-            <li>Assisted customers when they had an issue or question and collaborated with co-workers to have an efficient output.</li>
-            <li>Served food, restocked supplies/ingredients, cleaned dishes/tables, cooked and packaged menu items.</li>
-          </ul>
+        <div className="resume-row">
+          <div>
+            <p className="resume-entity">Steak N’ Shake</p>
+            <p className="resume-role">Team Member</p>
+            <ul className="resume-list">
+              <li>Assisted customers when they had an issue or question and collaborated with co-workers to have an efficient output.</li>
+              <li>Served food, restocked supplies/ingredients, cleaned dishes/tables, cooked and packaged menu items.</li>
+            </ul>
+          </div>
+
+          <div className="resume-meta">
+            Oldsmar, FL<br />
+            Summer 2023
+          </div>
         </div>
 
+        <div className="resume-row">
+          <div>
+            <p className="resume-entity">Rogues’ Gallery</p>
+            <p className="resume-role">Cover Art Artist</p>
+            <ul className="resume-list">
+              <li>Designed cover art for Rogues’ Gallery’s single “Can’t Relate.”</li>
+              <li>Planned out designs with the client and kept them updated on the progression of the commission.</li>
+            </ul>
+          </div>
+
+          <div className="resume-meta">
+            Tampa, FL<br />
+            Feb 2025
+          </div>
+        </div>
       </section>
 
-      {/* skills */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold border-b pb-1 mb-3">Skills</h2>
-        <p>
-          <span className="font-semibold">Programming Languages:</span> JavaScript, HTML, CSS, SQL
-        </p>
-        <p>
-          <span className="font-semibold">Data Visualization and Analysis:</span> Tableau, Excel
-        </p>
+      {/* leadership and volunteering */}
+      <section className="resume-section">
+        <h2 className="resume-section-title">LEADERSHIP & VOLUNTEERING</h2>
+
+        <div className="resume-row">
+          <div>
+            <p className="resume-entity">Art Club</p>
+            <p className="resume-role">Secretary</p>
+            <ul className="resume-list">
+              <li>Directly involved in event promotion via passing out flyers and stickers, tabling/acting as a spokesperson at other USF events, hosting interactive community drawings, and created an executive board introduction post on the club’s Instagram to engage with the public.</li>
+              <li>Greeted people and checked them in for attendance at the events. Reserved rooms for events.</li>
+              <li>Resolved errors on USF’s part. Attended meetings/calls with the MSC Building Director and MSC Event Planning Coordinator.</li>
+            </ul>
+          </div>
+
+          <div className="resume-meta">
+            Tampa, FL<br />
+            Jan 2026 – Present
+          </div>
+        </div>
+
+        <div className="resume-row">
+          <div>
+            <p className="resume-entity">Letters for Destiny</p>
+            <p className="resume-role">Volunteer</p>
+            <ul className="resume-list">
+              <li>Created 100+ digital and physical weekly-themed highly detailed cards/drawings for children in hospitals all across the United States, Australia, and England.</li>
+            </ul>
+          </div>
+
+          <div className="resume-meta">
+            Tampa, FL<br />
+            Mar 2022 – Oct 2022
+          </div>
+        </div>
       </section>
 
       {/* projects */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold border-b pb-1 mb-3">Projects</h2>
+      <section className="resume-section">
+        <h2 className="resume-section-title">PROJECTS</h2>
 
-        <div className="mb-4">
-          <p className="font-semibold">Sales Data Project for AI & Data Analytics Course</p>
-          <ul className="list-disc ml-6 mt-2">
+        <div>
+          <p className="resume-entity">Sales Data Project for AI & Data Analytics Course</p>
+          <ul className="resume-list">
             <li>Utilized Tableau to create sales, profit, and demand KPI charts using sales data from a company that sells furniture, technology, and office supplies.</li>
             <li>Demonstrated drill-down analytics, created a pareto chart, dual chart, and broke down profit by state.</li>
             <li>Created a demand forecast and what-if scenario analysis on sales based on growth and churn rates.</li>
             <li>Constructed 2 dashboards to tell the story of the company’s sales data and provide insight into what the company should look out for and their suggested next steps/actions to take.</li>
           </ul>
         </div>
+      </section>
+
+      {/* skills */}
+      <section className="resume-section">
+        <h2 className="resume-section-title">SKILLS</h2>
+
+        <p className="resume-detail">
+          <strong>Data Visualization & Analysis:</strong> Tableau, Excel
+        </p>
+        <p className="resume-detail">
+          <strong>Other Skills:</strong> Microsoft Office, Google Workspace, Procreate
+        </p>
       </section>
 
     </main>
